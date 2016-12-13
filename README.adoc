@@ -1,0 +1,13 @@
+= Spock and Kotlin
+
+Demonstration for Spock with Kotlin bug
+
+The Spock code is testing the Kotlin code, but Spock doesn't seem to be compatible with the final behaviour of Kotlin, and complains with the error:
+
+----
+groovy.lang.GroovyRuntimeException: Could not find matching constructor for: address.AddressService(google.GoogleService$$EnhancerByCGLIB$$6fa9e3ff)
+
+	at test.AddressServiceSpec.find address(AddressServiceSpec.groovy:23)
+----
+
+This error is reproduced by running the AddressSpec test, or just by doing a `./gradlew clean test`
