@@ -12,7 +12,7 @@ import address.Address
 
 
 @RunWith(SpotlinTestRunner)
-@OpenedClasses(GoogleService)
+@OpenedClasses([GoogleService, AddressService])
 class AddressServiceSpec extends Specification {
 
 	def "find address"() {
